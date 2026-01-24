@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_provisionalAdmin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CodigoPedido_fin">
+
+
+    <Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/beige_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgbtn_BackDatosRecojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="backLista3"
+            app:srcCompat="@drawable/ic_back_activity"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="CODIGO DEL PEDIDO"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </Toolbar>
+
+
+    <TextView
+        android:id="@+id/txt_CodigoPedido"
+        android:layout_width="223dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/white_beige_background"
+        android:hint="codigo generado cin el id del producto o codigo mas datos del cliente(usuario mejor), poner monto total y fecha en la que puede recoger- fecha limite"
+        android:textAlignment="center"
+        android:textColor="@color/latte_ligth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="68dp"
+        android:text="Descargar codigo"
+        android:textColor="@color/brownie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_CodigoPedido" />
+
+    <TextView
+        android:id="@+id/txt_recomendacion"
+        android:layout_width="229dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="80dp"
+        android:text="No olvidar revisar los horarios de atencion del pedido al momento de recogerlo!"
+        android:textAlignment="center"
+        android:textColor="@color/latte_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/btn_Inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/brownie"
+        android:onClick="irMainActivity"
+        android:text="Ir a inicio"
+        android:textColor="@color/white_beige_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_recomendacion"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_DesCodigo"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/txt_CodigoPedido"
+        app:srcCompat="@drawable/ic_descargar"
+        android:backgroundTint="@color/brownie"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

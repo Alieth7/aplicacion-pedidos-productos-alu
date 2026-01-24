@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        >
+        <item
+            android:id="@+id/navMenu"
+            android:icon="@drawable/ic_menu2"
+            android:title="Menu" />
+    </group>
+
+    <group
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/navProductos"
+            android:icon="@drawable/ic_productos"
+            android:title="Productos" />
+
+        <item
+            android:id="@+id/navPersonalizado"
+            android:icon="@drawable/ic_personalizado"
+
+            android:title="Crear personalizado" />
+
+        <item
+            android:id="@+id/navContactos"
+            android:icon="@drawable/ic_contacto"
+            android:title="Contactanos" />
+
+        <item
+            android:id="@+id/navRedesSociales"
+            android:icon="@drawable/ic_redes_sociales"
+            android:title="Nuestras redes sociales" />
+    </group>
+
+    <group
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/navInicioSesion"
+            android:icon="@drawable/ic_inicio_sesion"
+            android:title="Iniciar sesion" />
+    </group>
+
+</menu>

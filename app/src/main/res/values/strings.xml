@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">AlunethProyect</string>
+
+    <string-array name="tipos_encuadernacion">
+        <item>1-Anillado</item>
+        <item>2-Copta</item>
+        <item>3-Belga</item>
+        <item>4-Puntada larga</item>
+        <item>5-Clasico</item>
+    </string-array>
+
+    <string-array name="tipos_tamanio">
+        <item>1-Tamanio carta</item>
+        <item>2-Tamanio mitad oficio</item>
+        <item>3-Tamanio mitad carta</item>
+        <item>4-Tamanio 1/4 oficio</item>
+        <item>5-Tamanio 1/4 carta</item>
+    </string-array>
+
+    <string-array name="tipos_forro">
+        <item>1-Tela</item>
+        <item>2-Cuerina (plantilla)</item>
+        <item>3-Aguayo</item>
+        <item>4-Cuerina</item>
+    </string-array>
+
+    <string-array name="tipos_hoja">
+        <item>1-Blanca ecologica</item>
+        <item>2-Ahuesada ecologica</item>
+    </string-array>
+
+    <string-array name="tipos_disenio">
+        <item>1-Lisas</item>
+        <item>2-Punteadas</item>
+        <item>3-Rayadas</item>
+        <item>4-Cuadriculadas larga</item>
+        <item>5-Hexagonos</item>
+    </string-array>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_provisionalAdmin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ListaPedido_2"
+    >
+
+
+    <Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/beige_primary"
+        android:onClick="backMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgbtn_BackMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="backMain"
+            app:srcCompat="@drawable/ic_back_activity"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="LISTA DEL PEDIDO"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rview_listaCompra"
+        android:layout_width="367dp"
+        android:layout_height="416dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <TextView
+        android:id="@+id/txt_TotalLista"
+        android:layout_width="45dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="32dp"
+        android:text="0 Bs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/Rview_listaCompra"
+        android:textColor="@color/brownie"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="109dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:text="Monto total:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rview_listaCompra"
+        android:textColor="@color/latte_primary"/>
+
+    <Button
+        android:id="@+id/btn_IrDatosRec"
+        android:layout_width="146dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@color/brownie"
+        android:onClick="pedirDatos"
+        android:text="Siguiente"
+        android:textColor="@color/white_beige_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.111" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:onClick="listarPedidos"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/beige_primary">
+
+        <ImageButton
+            android:id="@+id/btn_DrawerMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_main_menu" />
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="PRODUCTOS"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rview_Cuadernos"
+        android:layout_width="351dp"
+        android:layout_height="523dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_TotalCosto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="@color/beige_primary"
+            android:gravity="center"
+            android:hint="Total Bs"
+            android:textColor="@color/latte_primary"
+            android:textColorHint="@color/latte_primary" />
+
+        <Button
+            android:id="@+id/btn_Pedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/brownie"
+            android:onClick="listarPedido"
+            android:text="Realizar pedido"
+            android:textAlignment="center"
+            android:textColor="@color/white_beige_background" />
+    </LinearLayout>
+
+
+</LinearLayout>

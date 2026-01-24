@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="beige_primary">#E6B798</color>
+    <color name="latte_primary">#A38F85</color>
+    <color name="latte_ligth">#A66953</color>
+    <color name= "dustyose_secondary">#D4B2A7</color>
+    <color name="nude_background">#F2DCC9</color>
+    <color name="white_beige_background">#F6F5EC</color>
+    <color name="brownie">#5E3023</color>
+</resources>

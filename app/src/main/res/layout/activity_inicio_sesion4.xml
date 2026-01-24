@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_provisionalAdmin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".InicioSesion_4">
+
+    <Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/beige_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgbtn_BackMain3"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back_activity"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="INICIO DE SESION"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </Toolbar>
+
+    <Button
+        android:id="@+id/btn_InicioSesion"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/brownie"
+        android:onClick="ingresar"
+        android:text="Ingresar"
+        android:textColor="@color/white_beige_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxt_Contrasenia" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:text="Usuario:"
+        android:textColor="@color/latte_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Contrasenia:"
+        android:textColor="@color/latte_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxt_NombreUsuario" />
+
+    <EditText
+        android:id="@+id/edtxt_NombreUsuario"
+        android:layout_width="285dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Ingrese su nombre de usuario"
+        android:inputType="text"
+        android:textColor="@color/latte_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/edtxt_Contrasenia"
+        android:layout_width="283dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Ingrese se contrasenia"
+        android:inputType="text"
+        android:textColor="@color/latte_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/btn_CrearCuenta"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/brownie"
+        android:onClick="crearCuenta"
+        android:text="Crear cuenta"
+        android:textColor="@color/white_beige_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_InicioSesion"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <!--<Button
+        android:id="@+id/button"
+        android:layout_width="75dp"
+        android:layout_height="54dp"
+        android:onClick="irVistaAdmin"
+        android:textColor="@color/white_beige_background"
+        android:backgroundTint="@color/brownie"
+        android:text="provicional para ver la vista de admi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

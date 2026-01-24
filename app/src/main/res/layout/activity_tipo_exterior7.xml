@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_provisionalAdmin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TipoExterior_7">
+
+
+    <ImageButton
+        android:id="@+id/imgbtn_BackEncuadernado"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_back_activity"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="20dp" />
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="TAPAS Y ENCUADERNADO"
+        android:textColor="@color/latte_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_IrInterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="irTapasInterior"
+        android:text="Ir a interior"
+        android:textColor="@color/white_beige_background"
+        android:backgroundTint="@color/brownie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
+
+    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+        android:id="@+id/imgcarru_Tamanio"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <Spinner
+        android:id="@+id/spn_Tamanio"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/tipos_tamanio"
+        android:textColor="@color/latte_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgcarru_Tamanio" />
+
+    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+        android:id="@+id/imgcarru_Forro"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_Tamanio" />
+
+    <Spinner
+        android:id="@+id/spn_Forro"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:entries="@array/tipos_forro"
+        android:textColor="@color/latte_primary"
+        app:layout_constraintBottom_toTopOf="@+id/btn_IrInterior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgcarru_Forro"
+        app:layout_constraintVertical_bias="0.189" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

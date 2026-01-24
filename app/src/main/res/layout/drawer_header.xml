@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:gravity="bottom"
+    android:padding="20dp"
+    android:background="@color/beige_primary">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="@color/beige_primary">
+
+        <ImageView
+            android:id="@+id/imgView_Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_person"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_NombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre usuario"
+        android:textColor="@color/brownie"
+        android:textStyle="bold"
+        android:textSize="13dp"/>
+
+    <TextView
+        android:id="@+id/txt_NombreCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre completo"
+        android:textColor="@color/brownie"
+
+        android:textSize="12dp"/>
+
+</LinearLayout>

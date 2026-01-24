@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_provisionalAdmin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TipoEncuadernado_6">
+
+
+    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+        android:id="@+id/imgcarru_Encuadernado"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="128dp"
+        app:carouselType="SHOWCASE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/beige_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgbtn_BackMain3"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back_activity"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="TIPO DE ENCUADERNACION"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </Toolbar>
+
+    <Button
+        android:id="@+id/btn_IrTapas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="irTapasExterior"
+        android:text="Ir a tapas"
+        android:textColor="@color/white_beige_background"
+        android:backgroundTint="@color/brownie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <Spinner
+        android:id="@+id/spn_TipoEncuader"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="28dp"
+        android:entries="@array/tipos_encuadernacion"
+        android:textColor="@color/latte_primary"
+
+        android:backgroundTint="@color/white_beige_background"
+        android:foregroundTint="@color/brownie"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgcarru_Encuadernado" />
+
+    <TextView
+        android:id="@+id/txt_DetallesEcuadernado"
+        android:layout_width="274dp"
+        android:layout_height="178dp"
+        android:hint="Le podemos poner simplemente aca una descripcion de las ventajas de cada encuadernacion"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_TipoEncuader"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <!--<ImageCarrousel-->
+</androidx.constraintlayout.widget.ConstraintLayout>
